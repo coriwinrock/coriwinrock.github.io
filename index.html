@@ -1,2 +1,620 @@
-this is a test
-this is a test
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="./jquery.js" type="text/javascript"></script>
+        <link href="https:// fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
+        <style type="text/css">
+          body {
+            cursor: crosshair;
+            font-family: "Garamond", "EB Garamond", serif;
+            font-size: 18px;
+          }
+
+          .red {
+            color: red;
+          }
+          img {
+            max-width: 100%;
+          }
+
+          a {
+            cursor: crosshair;
+          }
+
+          a:hover {
+            cursor: crosshair;
+          }
+          .img-container {
+            display: block;
+            width: 1275px;
+            margin: auto;
+            position: relative;
+            transition: opacity 3s;
+          }
+
+          img {
+            transition: opacity 1.5s;
+          }
+
+          #moon-photo {
+            position: absolute;
+            width: 722px;
+            height: 703px;
+            top: 236px;
+            left: 320px;
+          }
+
+          /* I Exist to make sure all the clickable areas are aligned with the
+          crosses.  Uncomment me to see borders around them */
+          /*a {
+            border: 1px solid red;
+          }*/
+
+          .link-1 {
+            height: 28px;
+            width: 28px;
+            position: absolute;
+            /*background-color: blue;*/
+            left: 32.7%;
+            top: 24.5%;
+          }
+
+          .link-2 {
+            height: 28px;
+            width: 28px;
+            position: absolute;
+            /*background-color: blue;*/
+            left: 42.5%;
+            top: 24.7%;
+          }
+
+          .link-3 {
+            height: 28px;
+            width: 28px;
+            position: absolute;
+            /*background-color: blue;*/
+            left: 52.6%;
+            top: 24.7%;
+          }
+
+          .link-4{
+            height: 28px;
+            width: 28px;
+            position: absolute;
+            /*background-color: blue;*/
+            left: 62.4%;
+            top: 24.8%;
+          }
+
+          .link-5 {
+            height: 28px;
+            width: 28px;
+            position: absolute;
+            /*background-color: blue;*/
+            left: 72.2%;
+            top: 24.9%;
+          }
+
+          .link-6 {
+            height: 28px;
+            width: 28px;
+            position: absolute;
+            /*background-color: blue;*/
+            left: 32.6%;
+            top: 34.6%;
+          }
+
+          .link-7 {
+            height: 28px;
+            width: 28px;
+            position: absolute;
+            /*background-color: blue;*/
+            left: 42.3%;
+            top: 34.6%;
+          }
+
+          .link-8 {
+            height: 28px;
+            width: 28px;
+            position: absolute;
+            /*background-color: blue;*/
+            left: 52.4%;
+            top: 34.6%;
+          }
+
+          .link-9 {
+            height: 28px;
+            width: 28px;
+            position: absolute;
+            /*background-color: blue;*/
+            left: 62.4%;
+            top: 34.6%;
+          }
+
+          .link-10 {
+            height: 28px;
+            width: 28px;
+            position: absolute;
+            /*background-color: blue;*/
+            left: 72.4%;
+            top: 34.8%;
+          }
+
+          .link-11 {
+            height: 28px;
+            width: 28px;
+            position: absolute;
+            /*background-color: blue;*/
+            left: 32.2%;
+            top: 44.3%;
+          }
+
+          .link-12 {
+            height: 28px;
+            width: 28px;
+            position: absolute;
+            /*background-color: blue;*/
+            left: 42.3%;
+            top: 44.3%;
+          }
+
+          .link-13 {
+            height: 46px;
+            width: 46px;
+            position: absolute;
+            /*background-color: blue;*/
+            left: 51.7%;
+            top: 43.9%;
+          }
+
+          .link-14 {
+            height: 28px;
+            width: 28px;
+            position: absolute;
+            /*background-color: blue;*/
+            left: 62.2%;
+            top: 44.5%;
+          }
+
+          .link-15 {
+            height: 28px;
+            width: 28px;
+            position: absolute;
+            /*background-color: blue;*/
+            left: 72.2%;
+            top: 44.6%;
+          }
+
+          .link-16 {
+            height: 28px;
+            width: 28px;
+            position: absolute;
+            /*background-color: blue;*/
+            left: 32.3%;
+            top: 54.3%;
+          }
+
+          .link-17 {
+            height: 28px;
+            width: 28px;
+            position: absolute;
+            /*background-color: blue;*/
+            left: 42%;
+            top: 54.2%;
+          }
+
+          .link-18 {
+            height: 28px;
+            width: 28px;
+            position: absolute;
+            /*background-color: blue;*/
+            left: 52.1%;
+            top: 54.3%;
+          }
+
+          .link-19 {
+            height: 28px;
+            width: 28px;
+            position: absolute;
+            /*background-color: blue;*/
+            left: 61.9%;
+            top: 54.3%;
+          }
+
+          .link-20 {
+            height: 28px;
+            width: 28px;
+            position: absolute;
+            /*background-color: blue;*/
+            left: 72.1%;
+            top: 54.5%;
+          }
+
+          .link-21 {
+            height: 28px;
+            width: 28px;
+            position: absolute;
+            /*background-color: blue;*/
+            left: 32%;
+            top: 63.9%;
+          }
+
+          .link-22 {
+            height: 28px;
+            width: 28px;
+            position: absolute;
+            /*background-color: blue;*/
+            left: 41.9%;
+            top: 64.1%;
+          }
+
+          .link-23 {
+            height: 28px;
+            width: 28px;
+            position: absolute;
+            /*background-color: blue;*/
+            left: 52%;
+            top: 64.2%;
+          }
+
+          .link-24 {
+            height: 28px;
+            width: 28px;
+            position: absolute;
+            /*background-color: blue;*/
+            left: 61.9%;
+            top: 64.3%;
+          }
+
+          .link-25 {
+            height: 28px;
+            width: 28px;
+            position: absolute;
+            /*background-color: blue;*/
+            left: 71.9%;
+            top: 64.2%;
+          }
+
+          .po-text-intro {
+            position: absolute;
+            left: 35%;
+            top: 28%;
+            width: 80%;
+            font-size: 42px;
+            z-index: 1;
+            transition: opacity 2s;
+          }
+
+          .po-text-1{
+            position: absolute;
+            left: 10%;
+            top: 29%;
+            width: 46%;
+            transition: opacity 1.5s;
+          }
+
+          .po-text-2{
+            position: absolute;
+            left: 65%;
+            top: 18%;
+            width: 80%;
+            transition: opacity 1.5s;
+          }
+
+          .po-text-3 {
+            position: absolute;
+            left: 47%;
+            top: 35%;
+            width: 80%;
+            transition: opacity 1.5s;
+          }
+
+          .po-text-4 {
+            position: absolute;
+            left: 70%;
+            top: 40%;
+            width: 80%;
+            transition: opacity 1.5s;
+          }
+
+          .po-text-5 {
+            position: absolute;
+            left: 5%;
+            top: 60%;
+            width: 80%;
+            transition: opacity 1.5s;
+          }
+
+          .po-text-6 {
+            position: absolute;
+            left: 27%;
+            top: 50%;
+            width: 80%;
+            transition: opacity 1.5s;
+          }
+
+          .po-text-7 {
+            position: absolute;
+            left: 5%;
+            top: 60%;
+            width: 80%;
+            transition: opacity 1.5s;
+          }
+
+          .po-text-8 {
+            position: absolute;
+            left: 25%;
+            top: 60%;
+            width: 80%;
+            transition: opacity 1.5s;
+          }
+
+          .po-text-9 {
+            position: absolute;
+            left: 85%;
+            top: 40%;
+            width: 80%;
+            transition: opacity 1.5s;
+          }
+
+          .po-text-10 {
+            position: absolute;
+            left: 5%;
+            top: 60%;
+            width: 80%;
+            transition: opacity 1.5s;
+          }
+
+          .po-text-11 {
+            position: absolute;
+            left: 5%;
+            top: 60%;
+            width: 80%;
+            transition: opacity 1.5s;
+          }
+
+          .po-text-12 {
+            position: absolute;
+            left: 7%;
+            top: 30%;
+            width: 80%;
+            transition: opacity 1.5s;
+          }
+
+          .po-text-13 {
+            position: absolute;
+            left: 85%;
+            top: 30%;
+            width: 50%;
+            transition: opacity 1.5s;
+          }
+
+          .po-text-14 {
+            position: absolute;
+            left: 55%;
+            top: 30%;
+            width: 80%;
+            transition: opacity 1.5s;
+          }
+
+          .po-text-15 {
+            position: absolute;
+            left: 90%;
+            top: 60%;
+            width: 80%;
+            transition: opacity 1.5s;
+          }
+
+          .po-text-16 {
+            position: absolute;
+            left: 5%;
+            top: 60%;
+            width: 80%;
+            transition: opacity 1.5s;
+          }
+
+          .po-text-17 {
+            position: absolute;
+            left: 5%;
+            top: 60%;
+            width: 80%;
+            transition: opacity 1.5s;
+          }
+
+          .po-text-18 {
+            position: absolute;
+            left: 5%;
+            top: 60%;
+            width: 80%;
+            transition: opacity 1.5s;
+          }
+
+          .po-text-19 {
+            position: absolute;
+            left: 5%;
+            top: 60%;
+            width: 80%;
+            transition: opacity 1.5s;
+          }
+
+          .po-text-20 {
+            position: absolute;
+            left: 5%;
+            top: 60%;
+            width: 80%;
+            transition: opacity 1.5s;
+          }
+
+          .po-text-21 {
+            position: absolute;
+            left: 5%;
+            top: 60%;
+            width: 80%;
+            transition: opacity 1.5s;
+          }
+
+          .po-text-22 {
+            position: absolute;
+            left: 5%;
+            top: 60%;
+            width: 80%;
+            transition: opacity 1.5s;
+          }
+
+          .po-text-23 {
+            position: absolute;
+            left: 75%;
+            top: 65%;
+            width: 80%;
+            transition: opacity 1.5s;
+          }
+
+          .po-text-24 {
+            position: absolute;
+            left: 5%;
+            top: 60%;
+            width: 80%;
+            transition: opacity 1.5s;
+          }
+
+          .po-text-25 {
+            position: absolute;
+            left: 5%;
+            top: 60%;
+            width: 80%;
+            transition: opacity 1.5s;
+          }
+
+          .hide {
+            opacity: 0;
+          }
+
+          .off {
+            display: none;
+          }
+
+         .right-just {
+           display: block;
+           float: right;
+         }
+
+         .center-block-just {
+           display: block;
+           float: left;
+           margin-left: 110px;
+         }
+        </style>
+    </head>
+    <body>
+      <a class="po-text-intro"><i><b>Distance – be her only | + signal</i></b></a>
+      <div class="img-container hide">
+        <div class="rel-container">
+          <img id="embroidered-photo" src="really_final_crosses.jpg" />
+          <img id="moon-photo" class="moon hide hideable" src="frontphoto.jpg" />
+          <div id="text1" class="po-text-1 hide hideable">In a time of ambulances we inherited our spacesuit from + our dead</br><span class="right-just">+ mothers : no</span></br></br></br>In a time of ambulances we inherited our spacesuits from + the abandoned</br>trousseau chests scattered in the woods: yes—</br></br></br><span class="center-block-just">The cameras no longer attached to the chest plates.</br></span><span class="center-block-just">The film cartridges long ago developed in space.</br></span></div>
+          <div id="text2" class="po-text-2 hide hideable"> Emily Dickinson marked her poems with ‘<span class="red">+</span>’ signs near a word to indicate a variant to that word.</br>She did not choose among her variants + leaving them as concurrent alternatives.</br> </br>A variant may appear + </br> + above the word + to the side of a line + underneath a word + at right angles to the poem.</br> </br>Whole poems may be variants of each other.</div>
+          <div id="text3" class="po-text-3 hide hideable"> <b>+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ </b> <br/> <br/> <br/>Dear ________________,</div>
+          <div id="text4" class="po-text-4 hide hideable"> Stanza 1: </br><i>In the closet, the + spacesuit lives, a deep white in its vinyl </br> bag—feeding on what leaks through <br/>the zipper’s fervent mesh, an unmentionable, <br/>unworn, waiting, immortally in mind. Open </br> </br> </i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ Alice Fulton + <i>Maidenhead</i></div>
+          <div id="text5" class="po-text-5 hide hideable"> There were pictures of spaceships of launches of astronauts in training + + These were taken on the ground.</div>
+          <div id="text6" class="po-text-6 hide hideable"> Here are your needles:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;________________&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;________________&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;________________</div>
+          <div id="text7" class="po-text-7 hide hideable"> This is not the text that should be here. It is the worst kindo of interloper.</div>
+          <div id="text8" class="po-text-8 hide hideable"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ Réseau </span></br>We inherited + glass plates etched with a net of fine lines, a precise pattern of flowers + </br><span>+crosshairs.</span> </br><span></br></br>We set our tables. We corrected image distortion, calibrated distance & height on the Moon’s surface. </br>We made a foundation ground in lace. .</div>
+          <div id="text9" class="po-text-9 hide hideable"> </div>
+          <div id="text10" class="po-text-10 hide hideable"> This is not the text that should be here. It is the worst kindo of interloper.</div>
+          <div id="text11" class="po-text-11 hide hideable"> This is not the text that should be here. It is the worst kindo of interloper.</div>
+          <div id="text12" class="po-text-12 hide hideable"> In the first letter + on the first page of <i>Frankenstein</i> + the artic seafarer writes to his sister— </br></br><i>I may there discover the wondrous power which attracts the needle;<br/> and may regulate a thousand celestial observations, that require only this voyage<br/>to render their seeming eccentricities consistent forever.</i></div>
+          <div id="text13" class="po-text-13 hide hideable moon"> </div>
+          <div id="text14" class="po-text-14 hide hideable"> </div>
+          <div id="text15" class="po-text-15 hide hideable"> Stanza 8:</br> <i>You understand the + spacesuit in stanza one is mine,</br>my one white + spacesuit, in which I’ll never </i></div>
+          <div id="text16" class="po-text-16 hide hideable"> This is not the text that should be here. It is the worst kindo of interloper.</div>
+          <div id="text17" class="po-text-17 hide hideable"> <b>+ </b> The lunar surface cameras were fitted with Réseau plates, clear glass panes etched with a precise pattern of crosshairs. (<i>The Moon, 1968-1972</i>)<b> +</b> </div>
+          <div id="text18" class="po-text-18 hide hideable"> This is not the text that should be here. It is the worst kindo of interloper.</div>
+          <div id="text19" class="po-text-19 hide hideable"> This is not the text that should be here. It is the worst kindo of interloper.</div>
+          <div id="text20" class="po-text-20 hide hideable"> This is not the text that should be here. It is the worst kindo of interloper.</div>
+          <div id="text21" class="po-text-21 hide hideable"> This is not the text that should be here. It is the worst kindo of interloper.</div>
+          <div id="text22" class="po-text-22 hide hideable"> This is not the text that should be here. It is the worst kindo of interloper.</div>
+          <div id="text23" class="po-text-23 hide hideable"> </div>
+          <div id="text24" class="po-text-24 hide hideable"> This is not the text that should be here. It is the worst kindo of interloper.</div>
+          <div id="text25" class="po-text-25 hide hideable"> About heirlooms, you know what they say—<i>We will have to split one needle/this winter—</br>one end for me,/one end for air./</i> How we make do and mend is not always fair.</div>
+          <div id="links" class="off">
+            <a href="#" class="link-1" data-show-id="#text1"></a>
+            <a href="#" class="link-2" data-show-id="#text2"></a>
+            <a href="#" class="link-3" data-show-id="#text3"></a>
+            <a href="#" class="link-4" data-show-id="#text4"></a>
+            <a href="#" class="link-5" data-show-id="#text5"></a>
+            <a href="#" class="link-6" data-show-id="#text6"></a>
+            <a href="#" class="link-7" data-show-id="#text7"></a>
+            <a href="#" class="link-8" data-show-id="#text8"></a>
+            <a href="#" class="link-9" data-show-id="#text9"></a>
+            <a href="#" class="link-10" data-show-id="#text10"></a>
+            <a href="#" class="link-11" data-show-id="#text11"></a>
+            <a href="#" class="link-12" data-show-id="#text12"></a>
+            <a href="#" class="link-13" data-show-id=".moon"></a>
+            <a href="#" class="link-14" data-show-id="#text14"></a>
+            <a href="#" class="link-15" data-show-id="#text15"></a>
+            <a href="#" class="link-16" data-show-id="#text16"></a>
+            <a href="#" class="link-17" data-show-id="#text17"></a>
+            <a href="#" class="link-18" data-show-id="#text18"></a>
+            <a href="#" class="link-19" data-show-id="#text19"></a>
+            <a href="#" class="link-20" data-show-id="#text20"></a>
+            <a href="#" class="link-21" data-show-id="#text21"></a>
+            <a href="#" class="link-22" data-show-id="#text22"></a>
+            <a href="#" class="link-23" data-show-id="#text23"></a>
+            <a href="#" class="link-24" data-show-id="#text24"></a>
+            <a href="#" class="link-25" data-show-id="#text25"></a>
+          </div>
+        </div>
+      </div>
+    </body>
+    <script type="text/javascript">
+    $( function () {
+      var delay = false
+
+      $(".po-text-intro").mouseover(function () {
+        $( ".po-text-intro" ).addClass("hide");
+        setTimeout(function() {
+          $( ".po-text-intro" ).addClass("off");
+          $( "#links" ).removeClass("off");
+          $( ".img-container" ).removeClass("hide");
+        }, 2000)
+      });
+
+      $( ".rel-container a" ).mouseenter(function (event) {
+        var $curr = $(event.currentTarget);
+        var showId = $curr.data("showId")
+
+        if (!delay) {
+          $( "#embroidered-photo" ).addClass("hide");
+          $( showId ).removeClass("hide")
+        } else {
+          setTimeout(function() {
+            $( "#embroidered-photo" ).addClass("hide")
+            $( showId ).removeClass("hide")
+          }, 350)
+        }
+      })
+
+      $( ".rel-container a" ).mouseleave(function( event ) {
+        var $curr = $(event.currentTarget);
+        if (!delay) {
+          $( "#embroidered-photo" ).removeClass("hide")
+          $( ".hideable" ).addClass("hide")
+          delay = true;
+          setTimeout(function() {
+            delay = false
+          }, 350);
+        } else {
+          setTimeout(function() {
+            $( "#embroidered-photo" ).removeClass("hide")
+            $( ".hideable" ).addClass("hide")
+          }, 350)
+        }
+      })
+  })
+    </script>
+</html>
