@@ -288,12 +288,22 @@
             top: 64.2%;
           }
 
-          .po-text-intro {
+          .po-text-title {
             position: absolute;
             left: 35%;
             top: 28%;
             width: 80%;
             font-size: 42px;
+            z-index: 1;
+            transition: opacity 2s;
+          }
+
+           .po-text-intro {
+            position: absolute;
+            left: 25%;
+            top: 48%;
+            width: 50%;
+            font-size: 24px;
             z-index: 1;
             transition: opacity 2s;
           }
@@ -593,7 +603,10 @@
         </style>
     </head>
     <body>
-      <a class="po-text-intro"><i><b>Distance – be her only | + signal</i></b></a>
+      <a class="po-text-title"><i><b>Distance – be her only | + signal</i></b></a>
+      <a class="po-text-intro hide">The moon on the other hand, is a poor place for flags. Ours looked stiff and awkward, trying to blow on a breeze that does not blow...What a pity that in our moment of triumph we did not forswear the familiar Iwo Jima scene and plant instead a device acceptable to all: a limp white handkerchief, perhaps, symbol of the common cold, which like the moon, affects us all, unites us all. 
+      </br><span class="center-block-just">+ E.B. White, 1969 </span>
+      </a>
       <div class="img-container hide">
         <div class="rel-container">
           <img id="embroidered-photo" src="really_final_crosses.jpg" />
@@ -657,14 +670,23 @@
     $( function () {
       var delay = false
 
+      $(".po-text-title").mouseover(function () {
+        $( ".po-text-title" ).addClass("hide");
+        setTimeout(function() {
+          $( ".po-text-title" ).addClass("off");
+          $( ".po-text-intro").removeClass("hide");
+        }, 2000)
+      });
+        
       $(".po-text-intro").mouseover(function () {
+        if (!$( ".po-text-intro" ).hasClass("hide")) {
         $( ".po-text-intro" ).addClass("hide");
         setTimeout(function() {
-          $( ".po-text-intro" ).addClass("off");
+          $( ".po-text-intro" ).addClass("off");        
           $( "#links" ).removeClass("off");
           $( ".img-container" ).removeClass("hide");
-        // }, 2000)
-        }, 1)
+        }, 2000)
+        }
       });
 
       $( ".rel-container a" ).mouseenter(function (event) {
